@@ -8,12 +8,12 @@ var urlsToCache = [
   '/js/vue.min.js',
   '/js/jquery.min.js',
   '/js/hammer.min.js',
-  'images/profil.jpeg',
-  'images/profil1.jpg',
-  'images/profil2.jpg',
-  'images/profil3.jpg',
-  'images/profil4.jpg',
-  'button-09.mp3'
+  '/images/profil.jpeg',
+  '/images/profil1.jpg',
+  '/images/profil2.jpg',
+  '/images/profil3.jpg',
+  '/images/profil4.jpg',
+  '/button-09.mp3'
 ];
 
 self.addEventListener('install', function(event) {
