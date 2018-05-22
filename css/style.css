@@ -1,0 +1,306 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  background: #D3D6DB;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Transition page*/
+#content1, #content2 {
+  transition: transform 0.2s ease-out;
+  transform: scale(0);
+  /* top: 0;
+  bottom: 0;
+  position: sticky;
+  overflow-y: scroll; */
+}
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+  #content1, #content2 {
+    transition: transform 0.3s ease-out;
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+    top: 0;
+    bottom: 0;
+    position: sticky;
+    overflow-y: scroll;
+  }
+} */
+
+/* Navigation */
+nav {
+  height: 50px;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  border-top: 1px solid #eee;
+}
+
+nav a {
+  text-decoration: none;
+  color: #babec6;
+}
+
+nav a:hover i, nav a:active i, .active{
+  color: #03A9F4;
+}
+
+.cell {
+  flex: 1;
+}
+
+/* search-box */
+.search-box {
+  height: 50px;
+  width: 100%;
+  background: #1DA1F2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  z-index: 9;
+  position: fixed;
+  transition: top 0.3s;
+}
+
+.input-box{
+  height:70%;
+  width: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: #1B95E0;
+}
+
+.input-box i {
+  color: #fff;
+  margin-left: 10px;
+}
+
+.input-box input[type=text] {
+  height: 100%;
+  width: 92%;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 5px;
+  margin-left: 10px;
+  background: #1B95E0;
+  box-sizing: border-box;
+}
+
+.search-box input::placeholder{
+  color: #fff;
+  font-size: 14px;
+}
+
+/* Lapor */
+.lapor {
+  height: 65px;
+  background: #fff;
+  padding: 15px;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin-top: 50px;
+}
+
+.lapor:hover {
+  cursor: pointer;
+}
+
+.lapor img {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.lapor span {
+  color: #a5aab4;
+}
+
+/* post */
+.post {
+  margin-top: 10px;
+}
+
+.post:last-child{
+  margin-bottom: 55px;
+}
+
+.box {
+  padding: 1em;
+  background: #fff;
+}
+
+.profil {
+  box-sizing:border-box;
+}
+
+.profil h1 {
+  font-size: 16px;
+  color: #131313;
+}
+
+.profil p {
+  font-size: 12px;
+  color: #AFB3BD;
+}
+
+.photo {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #ddd;
+  float: left;
+  margin-right: 10px;
+}
+
+.photo img{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.detail h1 {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #2e2e2e;
+}
+
+.detail span {
+  color: #03A9F4;
+}
+
+.detail p {
+  margin-top: 2px;
+  font-size: 14px;
+  color: #2e2e2e;
+}
+
+.tag{
+  margin-top: 10px;
+}
+
+.box2 {
+  height: 40px;
+  border-top: 1px solid #eee;
+  background: #fff;
+  text-align: center;
+  color: #8d8f94;
+}
+
+.box2 p{
+  height: 100%;
+  margin-top: 7px;
+  font-size: 14px;
+  transition: all ease;
+}
+
+.box2 a {
+  text-decoration: none;
+  color: #8d8f94;
+}
+.box2 p:hover {
+  color: #03A9F4;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.box2 i{
+  margin-right: 5px;
+}
+
+/* post-detail */
+.post-detail{
+  margin-top: 50px;
+}
+
+
+/* comment */
+.comment {
+  display: flex;
+  padding: 15px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+
+.cell1{
+  width: 50px;
+}
+.isi-comment {
+  flex: 5;
+}
+
+.isi-comment h1 {
+  font-size: 16px;
+}
+
+.isi-comment p {
+  font-size: 14px;
+}
+
+.isi-comment p:last-child {
+  font-size: 12px;
+  color: #AFB3BD;
+}
+
+.tulis-comment {
+  height: 50px;
+  width: 100%;
+  border-top: 1px solid #e9e2e2;
+  border-bottom: 1px solid #e9e2e2;
+  background: #fff;
+  position: fixed;
+  bottom: 50px;
+  text-align: center;
+}
+.tulis-comment input[type=text]{
+  height: 100%;
+  width: 80%;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.tulis-comment input[type=submit]{
+  border: none;
+  height: 100%;
+  padding: 10px;
+  background: none;
+  color: #03A9F4;
+  font-weight: 600;
+}
+
+.tulis-comment input::placeholder {
+  font-size: 14px;
+  color: #585353;
+  letter-spacing: .06em;
+}
+
+
+/* footer */
+footer{
+  height: 60px;
+}
+
+footer.post-detail-page {
+  height: 90px;
+}
